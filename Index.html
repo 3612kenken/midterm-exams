@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Systems & Technologies 1 - Midterm Exam</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">WebTech<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="btn-contact">Contact Us</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cover / Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>Innovative Web Solutions</h1>
+            <p>Recreating modern, responsive, and visually stunning web experiences using HTML and CSS.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">Explore Services</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (CSS Grid) -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p class="section-subtitle">Discover what we can build together with modern design principles.</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Custom, scalable, and high-performance websites tailored precisely to your brand and needs.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Responsive Design</h3>
+                    <p>Seamless experiences across all devices, optimized perfectly for desktops, tablets, and mobile screens.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-paint-brush"></i></div>
+                    <h3>UI/UX Styling</h3>
+                    <p>Engaging layouts using Flexbox, CSS Grid, beautiful color palettes, and interactive hover effects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Web Systems & Technologies 1 Midterm Exam. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional simple mobile menu script -->
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
